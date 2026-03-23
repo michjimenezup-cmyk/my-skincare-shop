@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pinoy Store - Checkout</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cart-container">
+        <h2>Items in your Cart</h2>
+        <div id="cart-items-list">
+            <p>Your cart is empty.</p>
+        </div>
+        <hr>
+        <div class="cart-summary">
+            <h3>Total: <span id="cart-total">₱0.00</span></h3>
+            <button class="checkout-btn" onclick="alert('Salamat sa pagbili!')">Place Order</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
