@@ -48,6 +48,7 @@ if (searchInput) {
                 product.style.display = ""; 
             } else {
                 product.style.display = "none";
+                
             }
         });
     };
