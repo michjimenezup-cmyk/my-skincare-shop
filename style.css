@@ -336,3 +336,40 @@ html {
     align-self: flex-start; /* O 'center' kung gusto mo sa gitna ang button */
     width: 100%; /* Mas maganda tignan sa mobile kung full width ang button */
 }
+
+/* Auth & Delivery Forms */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.auth-box, .delivery-details {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 400px;
+}
+
+.delivery-details {
+    max-width: 100%; /* Sa cart, dapat malapad siya */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
