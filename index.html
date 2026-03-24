@@ -136,7 +136,45 @@
         <p class="price">₱700.00</p>
         <button class="add-btn">Add to Cart</button>
 </main>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p>May tanong tungkol sa iyong skin routine? Mag-message lang sa amin!</p>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <h4>📍 Address</h4>
+                    <p>Urdaneta, Pangasinan </p>
+                </div>
+                <div class="info-item">
+                    <h4>📞 Phone</h4>
+                    <p>+63 912 345 6789</p>
+                </div>
+                <div class="info-item">
+                    <h4>✉️ Email</h4>
+                    <p>support@curology-scratch.com</p>
+                </div>
+            </div>
 
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent! Sasagot kami sa email mo agad.'); this.reset();">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2026 CUROLOGY Scratch Shop. All rights reserved.</p>
+        <div class="social-links">
+            <span>FB</span> | <span>IG</span> | <span>TW</span>
+        </div>
+    </div>
+</footer>
     <script src="script.js"></script> 
 </body>
 </html>
