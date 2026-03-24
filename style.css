@@ -302,21 +302,25 @@ html {
     width: 100%;
 }
 
-.contact-section .container {
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto; /* Sinisiguro na laging nasa gitna ang container */
-    text-align: center; /* Center ang H2 at P */
+.contact-section {
+    background-color: #f4f8fb !important; 
+    padding: 80px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Eto ang mag-ce-center */
+    justify-content: center !important;
+    width: 100% !important;
+    text-align: center !important;
 }
 
 .contact-wrapper {
-    display: flex;
-    flex-wrap: wrap; /* Para mag-stack sa mobile */
-    justify-content: center; /* Center ang Info at Form */
-    align-items: flex-start;
-    gap: 40px;
-    margin-top: 40px;
-    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important; /* Eto ang mag-ce-center sa Info at Form */
+    gap: 40px !important;
+    margin: 40px auto 0 auto !important; /* 'auto' sa gilid para mag-center */
+    max-width: 1000px !important;
+}
 }
 
 /* Para hindi masyadong malapad ang form sa desktop */
