@@ -291,73 +291,44 @@ html {
 }
 /* END NG ABOUT PAGE
 
-/* CONTACT SECTION */
+/* CONTACT SECTION FIX */
 .contact-section {
-    background-color: #f4f8fb; /* Light Blue background */
+    background-color: #f4f8fb; 
     padding: 80px 20px;
-    text-align: center;
+    display: flex; /* Idinagdag para mag-center ang lahat ng content sa loob */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
-.contact-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
+.contact-section .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto; /* Sinisiguro na laging nasa gitna ang container */
+    text-align: center; /* Center ang H2 at P */
 }
 
 .contact-wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 40px auto;
-    text-align: left;
+    flex-wrap: wrap; /* Para mag-stack sa mobile */
+    justify-content: center; /* Center ang Info at Form */
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 40px;
+    width: 100%;
 }
 
-.contact-info {
+/* Para hindi masyadong malapad ang form sa desktop */
+.contact-info, .contact-form {
     flex: 1;
-    min-width: 250px;
+    min-width: 300px; /* Minimum width bago sila mag-stack */
+    max-width: 450px; /* Maximum width para hindi sila mag-stretch masyado */
+    text-align: left; /* Panatilihing left-aligned ang text sa loob ng cards */
 }
 
-.info-item {
-    margin-bottom: 25px;
-}
-
-.info-item h4 {
-    color: #4a90e2;
-    margin-bottom: 5px;
-}
-
-.contact-form {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-family: inherit;
-}
-
-/* FOOTER */
-footer {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.footer-content p {
-    font-size: 0.9rem;
-    opacity: 0.7;
-}
-
-.social-links {
-    margin-top: 10px;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+/* Button Alignment Fix */
+.contact-form button {
+    align-self: flex-start; /* O 'center' kung gusto mo sa gitna ang button */
+    width: 100%; /* Mas maganda tignan sa mobile kung full width ang button */
 }
